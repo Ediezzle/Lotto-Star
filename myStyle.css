@@ -1,0 +1,220 @@
+/* Scss Document */
+/* $rectangle4Color: linear-gradient(180deg, #5C006A 0%, #44034F 100%);
+$rectangle4BorderRadius: 15px;
+$rectangle4Position: absolute;
+$rectangle4Width: 80%;
+$rectangle4Height: 40%;
+$rectangle4MarginLeft: 80px;
+$rectangle4MarginRight: 80px;
+$loremAlign: center;
+$loremMarginLeft: 108px;
+$loremMarginRight: 109px;
+$loremMarginTop: 37px; */
+#secondary {
+  position: absolute;
+  width: 89%;
+  height: 593px;
+  border-radius: 1.3%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5C006A), to(#44034F));
+  background-image: linear-gradient(180deg, #5C006A 0%, #44034F 100%);
+  margin-left: 5%;
+  margin-top: -392px;
+}
+
+#secondary #nameGame p {
+  margin: 37px 0 0 6%;
+  color: #FFFFFF;
+}
+
+#secondary #nameGame p span {
+  color: #FFDD00;
+}
+
+#primary {
+  margin-top: 150px;
+  width: 1200px;
+  height: 50%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5C006A), to(#44034F));
+  background-image: linear-gradient(180deg, #5C006A 0%, #44034F 100%);
+  border-radius: 1.3%;
+  border-bottom: 100px;
+}
+
+#primary #charityHome {
+  height: 150px;
+  width: 150px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 55px 0 0 35px;
+}
+
+#primary #charityText {
+  margin: -35px 0 0 55px;
+  width: 75px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 42px;
+  line-height: 37px;
+  /* or 88% */
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  /* Secondary Button */
+  -webkit-transform: rotate(-5.55deg);
+          transform: rotate(-5.55deg);
+}
+
+#lorem {
+  margin-left: 8%;
+  margin-right: 9%;
+  margin-top: 3%;
+}
+
+#lorem p {
+  color: #FFFFFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+#rectangle11 {
+  height: 664px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(green), color-stop(48.44%, yellow), to(#CECECE));
+  background-image: linear-gradient(180deg, green 0%, yellow 48.44%, #CECECE 100%);
+}
+
+#button1 button {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5C006A), to(#44034F));
+  background-image: linear-gradient(180deg, #5C006A 0%, #44034F 100%);
+  border-radius: 20px;
+  color: #FFFFFF;
+  width: 360px;
+  height: 45px;
+  margin-left: 30px;
+  margin-top: 30px;
+  color: #FFFFFF;
+}
+
+#button1 button span {
+  margin-left: -180px;
+}
+
+#buttonsLayer1 {
+  margin-top: 50px;
+}
+
+#buttonsLayer1 button {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5C006A), to(#44034F));
+  background-image: linear-gradient(180deg, #5C006A 0%, #44034F 100%);
+  border-radius: 20px;
+  color: #FFFFFF;
+  width: 360px;
+  height: 45px;
+}
+
+#buttonsLayer1 button #span1 {
+  margin-left: -180px;
+}
+
+#buttonsLayer1 button #span2 {
+  margin-left: -220px;
+}
+
+#buttonsLayer1 button #span3 {
+  margin-left: -210px;
+}
+
+#buttonsLayer2 button {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5C006A), to(#44034F));
+  background-image: linear-gradient(180deg, #5C006A 0%, #44034F 100%);
+  border-radius: 20px;
+  color: #FFFFFF;
+  width: 360px;
+  height: 45px;
+}
+
+#buttonsLayer2 button #span1 {
+  margin-left: -210px;
+}
+
+#buttonsLayer2 button #span2 {
+  margin-left: -150px;
+}
+
+#buttonsLayer2 #dot, #buttonsLayer2 #roundPencil, #buttonsLayer2 #lot {
+  height: 14px;
+  width: 14px;
+  background-color: #FFDD00;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#buttonsLayer2 #acc {
+  color: #FFFFFF;
+}
+
+#buttonsLayer2 #ts {
+  color: #FFDD00;
+}
+
+#button2 button {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5C006A), to(#44034F));
+  background-image: linear-gradient(180deg, #5C006A 0%, #44034F 100%);
+  border-radius: 20px;
+  color: #FFFFFF;
+  width: 360px;
+  height: 45px;
+  float: right;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+
+#button2 button #span1 {
+  color: #FFDD00;
+}
+
+#tellUs p {
+  color: #FFFFFF;
+  margin-left: 3%;
+  margin-top: 35px;
+}
+
+#roundPencil, #lot {
+  height: 40px;
+  width: 40px;
+  background-color: #FFDD00;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#lot {
+  margin-left: -40px;
+}
+
+.line {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.75);
+  opacity: 0.7;
+  border-radius: 4px;
+  margin-top: 35px;
+}
+
+.horizontal {
+  width: 515px;
+  height: 2px;
+}
+
+.horizontal2 {
+  width: 890px;
+  height: 4px;
+}
+
+#placeholder {
+  height: 7.62%;
+}
+/*# sourceMappingURL=myStyle.css.map */

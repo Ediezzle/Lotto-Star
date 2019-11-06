@@ -1,0 +1,271 @@
+/* Scss Document */
+/* $rectangle4Color: linear-gradient(180deg, #5C006A 0%, #44034F 100%);
+$rectangle4BorderRadius: 15px;
+$rectangle4Position: absolute;
+$rectangle4Width: 80%;
+$rectangle4Height: 40%;
+$rectangle4MarginLeft: 80px;
+$rectangle4MarginRight: 80px;
+$loremAlign: center;
+$loremMarginLeft: 108px;
+$loremMarginRight: 109px;
+$loremMarginTop: 37px; */
+
+$secondary-width: 89%;
+$secondary-border-radius: 1.3%;
+$center-align: center;
+$lorem-margin-top: 3%;
+$button-width: 360px;
+
+@mixin buttons-design {
+  background-image: linear-gradient(180deg, #5C006A 0%, #44034F 100%);
+  border-radius: 20px;
+  color: color-picker(lorem);
+  width: $button-width;
+  height: height-picker(button-height);
+}
+
+$colors: (
+	secondary-bg: linear-gradient(180deg, #5C006A 0%, #44034F 100%),
+	lorem: #FFFFFF,
+	gold: #FFDD00,
+	lucky: #EC008C,
+	digits-secondary: #5D016B,
+	digits-blue: #0BA3F7,
+	lucky-secondary: #5C006A,	
+	rectangle11-bg: linear-gradient(180deg, #D1D1D1 0%, #FFFFFF 48.44%, #CECECE 100%)
+);
+
+@function color-picker($color-name) {
+  @return map-get($colors, $color-name);
+}
+	
+$margins: (
+	secondary-margin-left: 5%,
+	lorem-left: 8%,
+	lorem-right: 9%,
+	secondary-margin-top: -392px,
+	primary-margin-top: 150px
+);
+	
+@function margin-picker($margin-name){
+	@return map-get($margins, $margin-name);
+}
+
+$heights: (
+	secondary-height: 593px,
+	primary-height: 50%,
+	rectangle11-height: 664px,
+	button-height: 45px
+);
+
+@function height-picker($height-name){
+	@return map-get($heights, $height-name);
+}
+
+#secondary{
+	position: absolute;
+	width: $secondary-width;
+	height: height-picker(secondary-height);
+	border-radius: $secondary-border-radius;
+	background-image: color-picker(secondary-bg);
+	margin-left: margin-picker(secondary-margin-left);
+	margin-top: margin-picker(secondary-margin-top);
+
+	#nameGame{
+		p{
+			margin: 37px 0 0 6% ;
+			color: color-picker(lorem);
+			span{
+				color: color-picker(gold);
+			}
+			}
+		}
+} 
+
+#primary{
+	margin-top: margin-picker(primary-margin-top);
+	width: 1200px;
+	height: height-picker(primary-height);
+	background-image: color-picker(secondary-bg);
+	border-radius: $secondary-border-radius;
+	border-bottom: 100px;
+
+	#charityHome{
+		height: 150px;
+		width: 150px;
+		background-color:#FFFFFF;
+		border-radius: 50%;
+		display: inline-block;
+		margin: 55px 0 0 35px;
+}
+#charityText{
+	margin: -35px 0 0 55px;
+	width: 75px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 42px;
+	line-height: 37px;
+
+	/* or 88% */
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+
+	/* Secondary Button */
+	
+	transform: rotate(-5.55deg);
+}
+}
+
+#lorem{
+	margin-left: margin-picker(lorem-left);
+	margin-right: margin-picker(lorem-right);
+	margin-top: $lorem-margin-top;
+	p{
+		color: color-picker(lorem);	
+		text-align: $center-align;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 19px;
+	}
+}
+
+#rectangle11{
+	height: height-picker(rectangle11-height);
+	background-image: linear-gradient(180deg, green 0%, yellow 48.44%, #CECECE 100%);
+}
+#button1{
+	button
+	{ 
+	@include buttons-design;
+	margin-left: 30px;
+	margin-top: 30px;
+	color: color-picker(lorem);
+
+	span{
+		margin-left: -180px;
+	}
+	}
+}
+
+#buttonsLayer1{
+	margin-top: 50px;
+	button{
+		@include buttons-design;
+	#span1{	
+		margin-left: -180px;
+	}
+	#span2{
+		margin-left: -220px;
+	}
+	#span3{
+		margin-left: -210px;
+	}
+	}
+}
+
+#buttonsLayer2{
+	button{
+		@include buttons-design;
+	#span1{	
+		margin-left: -210px;
+	}
+	#span2{
+		margin-left: -150px;
+	  }
+   }
+		#dot{
+		height: 14px;
+		width: 14px;
+		background-color:#FFDD00;
+		border-radius: 50%;
+		display: inline-block;
+	}
+	#acc{
+		color: color-picker(lorem);
+	}
+	#ts{
+		color:  color-picker(gold);
+	}
+}
+
+#button2{
+	button{
+@include buttons-design;
+	float: right;
+	margin-right:40px;
+	margin-top: 40px;
+
+	#span1{
+		color: color-picker(gold)
+	}
+	}
+	
+	
+}
+
+#tellUs{
+	p{
+		color: color-picker(lorem);
+		margin-left: 3%;
+		margin-top: 35px;
+	
+	}
+}
+
+#roundPencil{
+	@extend #dot;
+		height: 40px;
+		width: 40px;
+		background-color:#FFDD00;
+		border-radius: 50%;
+		display: inline-block;
+}
+
+#lot{
+	@extend #roundPencil;
+	margin-left: -40px;
+}
+
+.line {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.75);
+  opacity: 0.7;
+  border-radius: 4px;
+  margin-top: 35px;
+}
+
+
+.horizontal {
+   width: 515px;
+   height: 2px;
+}
+
+.horizontal2{
+	width: 890px;
+   height: 4px;
+}
+
+#placeholder{
+	height: 7.62%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

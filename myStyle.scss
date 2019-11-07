@@ -15,7 +15,7 @@ $secondary-width: 89%;
 $secondary-border-radius: 1.3%;
 $center-align: center;
 $lorem-margin-top: 3%;
-$button-width: 360px;
+$button-width: 300px;
 
 @mixin buttons-design {
   background-image: linear-gradient(180deg, #5C006A 0%, #44034F 100%);
@@ -23,6 +23,24 @@ $button-width: 360px;
   color: color-picker(lorem);
   width: $button-width;
   height: height-picker(button-height);
+  text-transform: uppercase;
+}
+
+@mixin sub-buttons-design{
+  border-radius: 20px;
+  width: 345px;
+  height: 60px;
+  text-transform: uppercase;
+
+  font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 27px;
+
+/* identical to box height, or 70% */
+text-align: center;
+/* Tertiary Colour */
+color: #32023A;
 }
 
 $colors: (
@@ -56,7 +74,7 @@ $heights: (
 	secondary-height: 593px,
 	primary-height: 50%,
 	rectangle11-height: 664px,
-	button-height: 45px
+	button-height: 35px
 );
 
 @function height-picker($height-name){
@@ -71,6 +89,42 @@ $heights: (
 	background-image: color-picker(secondary-bg);
 	margin-left: margin-picker(secondary-margin-left);
 	margin-top: margin-picker(secondary-margin-top);
+
+		#lorem{
+	margin-left: margin-picker(lorem-left);
+	margin-right: margin-picker(lorem-right);
+	margin-top: $lorem-margin-top;
+	p{
+		color: color-picker(lorem);	
+		text-align: $center-align;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 19px;
+	}
+}
+		
+		#ansSub{
+			position: absolute;
+width: 1063px;
+height: 95px;
+left: 90px;
+margin-top: 45px;
+color: color-picker(gold);
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 19px;
+
+/* or 127% */
+text-align: center;
+
+
+		}
+	
 
 	#nameGame{
 		p{
@@ -117,67 +171,60 @@ $heights: (
 	/* Secondary Button */
 	
 	transform: rotate(-5.55deg);
+
+}
+#rfc{
+float: right;
+margin: -195px 275px 0 0;
+width: 620px;
+height: 81px;
+left: 467px;
+top: 1080px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 45px;
+line-height: 55px;
+text-transform: uppercase;
+
+/* Primary Colour */
+color: #FFDD00;
 }
 }
 
-#lorem{
-	margin-left: margin-picker(lorem-left);
-	margin-right: margin-picker(lorem-right);
-	margin-top: $lorem-margin-top;
-	p{
-		color: color-picker(lorem);	
-		text-align: $center-align;
-		font-family: Montserrat;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 15px;
-		line-height: 19px;
-	}
-}
+
 
 #rectangle11{
 	height: height-picker(rectangle11-height);
-	background-image: linear-gradient(180deg, green 0%, yellow 48.44%, #CECECE 100%);
+	background-image: linear-gradient(180deg, #D1D1D1 0%, #FFFFFF 48.44%, #CECECE 100%);
 }
 #button1{
-	button
+	.btn1
 	{ 
 	@include buttons-design;
 	margin-left: 30px;
 	margin-top: 30px;
 	color: color-picker(lorem);
-
-	span{
-		margin-left: -180px;
-	}
+	padding-left: 50px;
 	}
 }
 
-#buttonsLayer1{
+.buttonsLayer1{
 	margin-top: 50px;
-	button{
+	.btn1{
 		@include buttons-design;
-	#span1{	
-		margin-left: -180px;
+		padding-left: 50px;
+		margin-left:30px;
 	}
-	#span2{
-		margin-left: -220px;
-	}
-	#span3{
-		margin-left: -210px;
-	}
-	}
+	
 }
 
 #buttonsLayer2{
-	button{
+	.btn1{
 		@include buttons-design;
-	#span1{	
-		margin-left: -210px;
-	}
-	#span2{
-		margin-left: -150px;
-	  }
+		padding-left: 50px;
+		margin-left:30px;
    }
 		#dot{
 		height: 14px;
@@ -185,12 +232,15 @@ $heights: (
 		background-color:#FFDD00;
 		border-radius: 50%;
 		display: inline-block;
+		margin-left: 30px;
+
 	}
 	#acc{
 		color: color-picker(lorem);
 	}
 	#ts{
 		color:  color-picker(gold);
+		
 	}
 }
 
@@ -200,6 +250,7 @@ $heights: (
 	float: right;
 	margin-right:40px;
 	margin-top: 40px;
+	height: 45px;
 
 	#span1{
 		color: color-picker(gold)
@@ -240,7 +291,6 @@ $heights: (
   margin-top: 35px;
 }
 
-
 .horizontal {
    width: 515px;
    height: 2px;
@@ -251,9 +301,76 @@ $heights: (
    height: 4px;
 }
 
+#line3 {
+    position: absolute;
+	width: 840px;
+	height: 4px;
+	margin: -140px 275px 0 310px;
+
+	/* Primary Colour */
+	background: #FFDD00;
+	border-radius: 100px;
+}
+
+#btn{
+width: 176px;
+height: 39px;
+float:right;
+margin: -40px 40px 0 0;
+text-transform: uppercase;
+color: #FFDD00;
+
+/* Secondary Colour */
+background: linear-gradient(180deg, #5C006A 0%, #44034F 100%);
+
+/* Primary Colour */
+border: 2px solid #FFDD00;
+box-sizing: border-box;
+border-radius: 30px;
+}
+
 #placeholder{
 	height: 7.62%;
 }
+
+#footer{
+	margin-top: 600px;
+	height: 60px;
+	background-image: color-picker(secondary-bg);
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 19px;
+	color: color-picker(lorem);
+	padding:5px 150px 5px 150px;
+
+/* or 158% */
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+
+#spn{
+	@include buttons-design();
+}
+
+#buttonsLayer1Sub{
+	text-align: center;
+	#regBet{
+		
+	}
+	.btn1Sub{
+		@include sub-buttons-design;
+		margin-left: 20px;
+		
+   }
+	
+	}
+
+
+
 
 
 

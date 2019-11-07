@@ -21,6 +21,38 @@ $loremMarginTop: 37px; */
   margin-top: -392px;
 }
 
+#secondary #lorem {
+  margin-left: 8%;
+  margin-right: 9%;
+  margin-top: 3%;
+}
+
+#secondary #lorem p {
+  color: #FFFFFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+#secondary #ansSub {
+  position: absolute;
+  width: 1063px;
+  height: 95px;
+  left: 90px;
+  margin-top: 45px;
+  color: #FFDD00;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  /* or 127% */
+  text-align: center;
+}
+
 #secondary #nameGame p {
   margin: 37px 0 0 6%;
   color: #FFFFFF;
@@ -66,84 +98,69 @@ $loremMarginTop: 37px; */
           transform: rotate(-5.55deg);
 }
 
-#lorem {
-  margin-left: 8%;
-  margin-right: 9%;
-  margin-top: 3%;
-}
-
-#lorem p {
-  color: #FFFFFF;
-  text-align: center;
+#primary #rfc {
+  float: right;
+  margin: -195px 275px 0 0;
+  width: 620px;
+  height: 81px;
+  left: 467px;
+  top: 1080px;
   font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 19px;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 55px;
+  text-transform: uppercase;
+  /* Primary Colour */
+  color: #FFDD00;
 }
 
 #rectangle11 {
   height: 664px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(green), color-stop(48.44%, yellow), to(#CECECE));
-  background-image: linear-gradient(180deg, green 0%, yellow 48.44%, #CECECE 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#D1D1D1), color-stop(48.44%, #FFFFFF), to(#CECECE));
+  background-image: linear-gradient(180deg, #D1D1D1 0%, #FFFFFF 48.44%, #CECECE 100%);
 }
 
-#button1 button {
+#button1 .btn1 {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#5C006A), to(#44034F));
   background-image: linear-gradient(180deg, #5C006A 0%, #44034F 100%);
   border-radius: 20px;
   color: #FFFFFF;
-  width: 360px;
-  height: 45px;
+  width: 300px;
+  height: 35px;
+  text-transform: uppercase;
   margin-left: 30px;
   margin-top: 30px;
   color: #FFFFFF;
+  padding-left: 50px;
 }
 
-#button1 button span {
-  margin-left: -180px;
-}
-
-#buttonsLayer1 {
+.buttonsLayer1 {
   margin-top: 50px;
 }
 
-#buttonsLayer1 button {
+.buttonsLayer1 .btn1 {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#5C006A), to(#44034F));
   background-image: linear-gradient(180deg, #5C006A 0%, #44034F 100%);
   border-radius: 20px;
   color: #FFFFFF;
-  width: 360px;
-  height: 45px;
+  width: 300px;
+  height: 35px;
+  text-transform: uppercase;
+  padding-left: 50px;
+  margin-left: 30px;
 }
 
-#buttonsLayer1 button #span1 {
-  margin-left: -180px;
-}
-
-#buttonsLayer1 button #span2 {
-  margin-left: -220px;
-}
-
-#buttonsLayer1 button #span3 {
-  margin-left: -210px;
-}
-
-#buttonsLayer2 button {
+#buttonsLayer2 .btn1 {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#5C006A), to(#44034F));
   background-image: linear-gradient(180deg, #5C006A 0%, #44034F 100%);
   border-radius: 20px;
   color: #FFFFFF;
-  width: 360px;
-  height: 45px;
-}
-
-#buttonsLayer2 button #span1 {
-  margin-left: -210px;
-}
-
-#buttonsLayer2 button #span2 {
-  margin-left: -150px;
+  width: 300px;
+  height: 35px;
+  text-transform: uppercase;
+  padding-left: 50px;
+  margin-left: 30px;
 }
 
 #buttonsLayer2 #dot, #buttonsLayer2 #roundPencil, #buttonsLayer2 #lot {
@@ -152,6 +169,7 @@ $loremMarginTop: 37px; */
   background-color: #FFDD00;
   border-radius: 50%;
   display: inline-block;
+  margin-left: 30px;
 }
 
 #buttonsLayer2 #acc {
@@ -167,11 +185,13 @@ $loremMarginTop: 37px; */
   background-image: linear-gradient(180deg, #5C006A 0%, #44034F 100%);
   border-radius: 20px;
   color: #FFFFFF;
-  width: 360px;
-  height: 45px;
+  width: 300px;
+  height: 35px;
+  text-transform: uppercase;
   float: right;
   margin-right: 40px;
   margin-top: 40px;
+  height: 45px;
 }
 
 #button2 button #span1 {
@@ -214,7 +234,81 @@ $loremMarginTop: 37px; */
   height: 4px;
 }
 
+#line3 {
+  position: absolute;
+  width: 840px;
+  height: 4px;
+  margin: -140px 275px 0 310px;
+  /* Primary Colour */
+  background: #FFDD00;
+  border-radius: 100px;
+}
+
+#btn {
+  width: 176px;
+  height: 39px;
+  float: right;
+  margin: -40px 40px 0 0;
+  text-transform: uppercase;
+  color: #FFDD00;
+  /* Secondary Colour */
+  background: -webkit-gradient(linear, left top, left bottom, from(#5C006A), to(#44034F));
+  background: linear-gradient(180deg, #5C006A 0%, #44034F 100%);
+  /* Primary Colour */
+  border: 2px solid #FFDD00;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 30px;
+}
+
 #placeholder {
   height: 7.62%;
+}
+
+#footer {
+  margin-top: 600px;
+  height: 60px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5C006A), to(#44034F));
+  background-image: linear-gradient(180deg, #5C006A 0%, #44034F 100%);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 19px;
+  color: #FFFFFF;
+  padding: 5px 150px 5px 150px;
+  /* or 158% */
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#spn {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5C006A), to(#44034F));
+  background-image: linear-gradient(180deg, #5C006A 0%, #44034F 100%);
+  border-radius: 20px;
+  color: #FFFFFF;
+  width: 300px;
+  height: 35px;
+  text-transform: uppercase;
+}
+
+#buttonsLayer1Sub {
+  text-align: center;
+}
+
+#buttonsLayer1Sub .btn1Sub {
+  border-radius: 20px;
+  width: 345px;
+  height: 60px;
+  text-transform: uppercase;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 27px;
+  /* identical to box height, or 70% */
+  text-align: center;
+  /* Tertiary Colour */
+  color: #32023A;
+  margin-left: 20px;
 }
 /*# sourceMappingURL=myStyle.css.map */
